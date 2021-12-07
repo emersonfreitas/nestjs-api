@@ -1,0 +1,25 @@
+GET http://localhost:3000/robbot/deu-certin-gruli-gruli
+
+### 
+GET http://localhost:3000/orders
+
+###
+GET http://localhost:3000/orders/c7be7ec3-28f1-4ac2-822d-be6a328d4969
+
+###
+POST http://localhost:3000/orders
+Content-Type: application/json
+
+{
+  "amount": 1200.99
+}
+###
+PATCH  http://localhost:3000/orders/c7be7ec3-28f1-4ac2-822d-be6a328d4969
+Content-Type: application/json
+
+{
+  "amount": 13000.99,
+  "status": "approved"
+}
+###
+DELETE http://localhost:3000/orders/17e2d419-4dc9-4bf1-acac-03a9db4b6672
